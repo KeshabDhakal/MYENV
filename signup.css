@@ -1,0 +1,172 @@
+body {
+    background-color: rgb(24, 167, 177);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:radial-gradient(ellipse at bottom left, #42c9db,  #000000, #000000,#141212,#07fddc);
+  }
+  
+  .wrapper {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    box-shadow: 20px 20px 50px solid rgb(18, 207, 213);
+    border-radius: 40px;
+    padding: 40px;
+    overflow: hidden;
+    animation: ShadowChange 1s infinite linear;
+  }
+  
+  @keyframes ShadowChange {
+    0%, 100% {
+      box-shadow: 0px 8px 0px #cc33ff;
+    }
+    5% {
+      box-shadow: 0px 8px 0px #33cc33;
+    }
+    10% {
+      box-shadow: 0px 8px 0px orangered;
+    }
+    15% {
+      box-shadow: 8px 0px 0px white;
+    }
+    20% {
+      box-shadow: 8px 0px 0px orange;
+    }
+    25% {
+      box-shadow: 0px -8px 0px #d9a41e;
+    }
+    30% {
+      box-shadow: 0px -8px 0px #29282a;
+    }
+    35% {
+      box-shadow: 0px -8px 0px rgb(217, 120, 120);
+    }
+    40% {
+      box-shadow: 0px -8px 0px #a5b027;
+    }
+    45% {
+      box-shadow: -8px 0px 0px #97a497;
+    }
+    50% {
+      box-shadow: -8px 0px 0px #692b6b;
+    }
+    55% {
+      box-shadow: -8px 0px 0px #cc33ff;
+    }
+    60% {
+      box-shadow: -8px 0px 0px #33cc33;
+    }
+    65% {
+      box-shadow: -8px 8px 0px orangered;
+    }
+    70% {
+      box-shadow: -8px 8px 0px white;
+    }
+    75% {
+      box-shadow: -8px 8px 0px orange;
+    }
+    80% {
+      box-shadow: -8px 8px 0px #d9a41e;
+    }
+    85% {
+      box-shadow: 0px 8px 0px #29282a;
+    }
+    90% {
+      box-shadow: 0px 8px 0px rgb(217, 120, 120);
+    }
+    95% {
+      box-shadow: 0px 8px 0px #a5b027;
+    }
+    100% {
+      box-shadow: -8px -8px -8px #97a497;
+    }
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .input-group {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .input-group input {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  input:focus + label,
+  input:valid + label {
+    top: -5px;
+  }
+  
+  .remember {
+    margin: 5px 0 25px 5px;
+  }
+  
+  .remember label {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .remember label input {
+    accent-color: #0ef;
+  }
+  
+  button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #141212;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
+  
+  .signIn-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+    color: #0ef;
+  }
+  
+  .signIn-link p {
+    color: #1db1a2;
+    padding: 20px;
+    color: rgb(23, 173, 184);
+  }
+  .signIn-link a {
+    padding: 20px;
+    color: #1db1a2;
+    color: rgb(23, 173, 184);
+  }
