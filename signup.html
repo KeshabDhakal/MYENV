@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="icon" href="img.png" style="border-radius: 10000px;" type="image/xs-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <form id="signupForm" onsubmit="return validateForm()" action="nextPage.html" method="post"></form>
+        <h2>Sign Up</h2>
+        <div class="input-group">
+          <input type="text" id="username" required>
+          <label for="username">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="confirmPassword"  required>
+          <label for="confirmPassword">Confirm Password</label>
+        </div>
+        <div>
+        </div>
+        <div class="btn">
+          <button type="button" onclick="submitForm()">Sign Up</button>
+        </div>
+        <div class="signIn-link">
+          <p>Already have an account? <a href="login.html">Sign In</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+   
+
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
